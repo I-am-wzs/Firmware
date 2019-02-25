@@ -38,6 +38,9 @@
 ifeq ($(wildcard .git),)
     $(error YOU HAVE TO USE GIT TO DOWNLOAD THIS REPOSITORY. ABORTING.)
 endif
+ifeq ($(wildcard env.sh),)
+    $(error YOU HAVE TO USE EXCUTE THE SCRIPT ubuntu_sim_nuttx.sh in SCRIPT)
+endif
 
 # Help
 # --------------------------------------------------------------------
